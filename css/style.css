@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-image: url(../assets/bgred.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.section-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.section-one{
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-card{
+    background-image: url(../assets/bgred.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10.2rem;
+ 
+}
+@media (max-width:768px) {
+    .section-card{
+        grid-template-columns: 1fr;
+    }
+    .card-container{
+        margin: 1rem auto;
+    }
+    .section-container{
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}   
+.section-two{
+    background-image: url(../assets/bgred.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+}
+
+.card-container{
+    background: #fff;
+    border-radius: 25px;
+    padding: 25px;
+    max-width: 450;
+
+}
+.card-body{
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 6px 20px black;
+    border-radius: 15px;
+    background: white;
+    margin: auto 1rem;
+    cursor: pointer;
+    margin: 1rem auto;
+}
+.card-body:hover{
+    border-top: black;
+    transform: scale(1.1);
+}
+.card-img{
+    width: 260px;
+    border-radius: 5px;
+    margin-top: 3rem;
+    height: 16rem;
+}
+#content > p{
+    color: blue;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 12px;
+    background: #000;
+    color: #fff;
+}
+
+form{
+    display: grid;
+}
+
+footer{
+    height: 150;
+    padding: 25px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
